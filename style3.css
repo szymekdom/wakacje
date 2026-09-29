@@ -1,0 +1,93 @@
+body{
+    background-color: #fffbea;
+
+    background-image: url('../images/rainy-day.webp');
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-size: cover;        
+    background-attachment: fixed;  
+
+
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 500px;
+    padding: 60px 20px;
+
+    background-color: rgba(0, 0, 0, 0.25);
+
+}
+
+.hero article {
+    max-width: 750px;
+    padding: 45px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.93);
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    color: #263746  ;
+}
+
+.hero p {
+    margin-bottom: 30px;
+
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.boxes {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+}
+
+.box {
+    padding: 30px;
+    border: 3px solid #5B9FC1;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(38, 55, 70, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(38, 55, 70, 0.18);
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    color: #5B9FC1;
+    font-size: 24px;
+}
+
+.box p {
+    color: #52616B;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 700px) {
+    .boxes {
+        grid-template-columns: 1fr;
+        margin: 40px auto;
+    }
+}

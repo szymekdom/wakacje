@@ -23,11 +23,11 @@
     display: grid;
     
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 40px;
 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 30px 80px;
+    padding: 50px 30px;
 }
 
 .box {
